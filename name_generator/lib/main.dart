@@ -242,18 +242,24 @@ class BigCard extends StatelessWidget {
         // TODO: Don't know what MergeSemantics does.
         child: MergeSemantics(
           child: Wrap(
+            // Increased the font size so that you can see the word wrap working.
+            // By default, there are no [fontSize] parameters used in the Text Widgets.
             children: [
               Text(
                 pair.first,
-                style:
-                    style.copyWith(fontSize: 80, fontWeight: FontWeight.w200),
+                style: style.copyWith(
+                  fontSize: 80,
+                  fontWeight: FontWeight.w200,
+                ),
                 // semanticsLabel tells the phone what actual raw text is displayed here if you were to read it.
                 semanticsLabel: pair.first,
               ),
               Text(
                 pair.second,
-                style:
-                    style.copyWith(fontSize: 80, fontWeight: FontWeight.bold),
+                style: style.copyWith(
+                  fontSize: 80,
+                  fontWeight: FontWeight.bold,
+                ),
                 // semanticsLabel tells the phone what actual raw text is displayed here if you were to read it.
                 semanticsLabel: pair.second,
               ),
