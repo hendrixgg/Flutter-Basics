@@ -24,6 +24,11 @@
 	<string>$(FLUTTER_BUILD_NUMBER)</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+    <!-- Added these next two entries to allow access to Core Bluetooth in accordance with this https://betterprogramming.pub/handling-ios-13-bluetooth-permissions-26c6a8cbb816 and this https://github.com/PhilipsHue/flutter_reactive_ble/blob/master/example/ios/Runner/Info.plist-->
+    <key>NSBluetoothAlwaysUsageDescription</key>
+	<string>The app uses bluetooth to find, connect and transfer data between different devices</string>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>The app uses bluetooth to find, connect and transfer data between different devices</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
