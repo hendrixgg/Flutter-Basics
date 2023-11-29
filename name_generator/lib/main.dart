@@ -69,7 +69,6 @@ class _MyHomePageState extends State<MyHomePage> {
         selectedPage = GeneratorPage();
         break;
       case 1:
-        // Creates a rectangle with a cross over it indicating that this part of the UI is unfinished.
         selectedPage = FavoritesPage();
         break;
       default:
